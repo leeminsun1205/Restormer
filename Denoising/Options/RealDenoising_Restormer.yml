@@ -107,7 +107,7 @@ train:
 # validation settings
 val:
   window_size: 8
-  val_freq: 20           # Kiểm tra (Validate) sau mỗi 5 vòng (để test nhanh)
+  val_freq: 1000           # Kiểm tra (Validate) sau mỗi 5 vòng (để test nhanh)
   save_img: true          # Lưu ảnh kết quả để xem
   rgb2bgr: true
   use_image: false
