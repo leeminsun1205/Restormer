@@ -26,7 +26,7 @@ datasets:
 
     # ### ------------- CẤU HÌNH FIXED-PATCH SIZE ------------------
     mini_batch_sizes: [2]   # Batch size cố định
-    iters: [30000]          # <--- CHỐT: 30,000 vòng lặp
+    iters: [60000]          # <--- CHỐT: 30,000 vòng lặp
     gt_size: 128            # Kích thước ảnh cắt 128x128
     gt_sizes: [128]
     # ### ----------------------------------------------------------
@@ -65,14 +65,14 @@ path:
 
 # training settings
 train:
-  total_iter: 30000       # <--- CHỐT: Tổng cộng 30,000 vòng
+  total_iter: 60000       # <--- CHỐT: Tổng cộng 30,000 vòng
   warmup_iter: -1         # no warm up
   use_grad_clip: true
 
   # Lịch trình học (Scheduler) - Đã chỉnh lại cho khớp với 30k
   scheduler:
     type: CosineAnnealingRestartCyclicLR
-    periods: [30000]       # Chu kỳ học là 30,000 vòng (giảm LR từ 3e-4 về 1e-6)
+    periods: [60000]       # Chu kỳ học là 30,000 vòng (giảm LR từ 3e-4 về 1e-6)
     restart_weights: [1]
     eta_mins: [0.000001]   
   
