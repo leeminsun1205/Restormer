@@ -11,8 +11,8 @@ datasets:
     name: TrainSet
     type: Dataset_PairedImage
     # ĐƯỜNG DẪN DỮ LIỆU
-    dataroot_gt: /kaggle/input/custom/custom/train/gt
-    dataroot_lq: /kaggle/input/custom/custom/train/lq
+    dataroot_gt: /kaggle/working/custom/train/gt
+    dataroot_lq: /kaggle/working/custom/train/lq
     geometric_augs: true
 
     filename_tmpl: '{}'
@@ -37,8 +37,8 @@ datasets:
   val:
     name: ValSet
     type: Dataset_PairedImage
-    dataroot_gt: /kaggle/input/custom/custom/val/gt
-    dataroot_lq: /kaggle/input/custom/custom/val/lq
+    dataroot_gt: /kaggle/working/custom/val/gt
+    dataroot_lq: /kaggle/working/custom/val/lq
     io_backend:
       type: disk
 
