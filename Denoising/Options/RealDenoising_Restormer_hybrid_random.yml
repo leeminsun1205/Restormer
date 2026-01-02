@@ -113,7 +113,7 @@ val:
 # logging settings
 logger:
   print_freq: 100         # In log mỗi 100 vòng (cho đỡ rác màn hình)
-  save_checkpoint_freq: 5000 # Lưu model dự phòng mỗi 5,000 vòng (để rủi ro crash thì còn có cái dùng)
+  save_checkpoint_freq: 10000 # Lưu model dự phòng mỗi 5,000 vòng (để rủi ro crash thì còn có cái dùng)
   use_tb_logger: true
   wandb:
     project: ~
